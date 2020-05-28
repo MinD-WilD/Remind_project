@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Напоминлка</string>
+    <string name="time">Установить время</string>
+    <string name="date">Установить дату</string>
+    <string name="work">Начать работу</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_button">Назад</string>
+    <string name="main_menu">Главное меню</string>
+    <string name="date_setup">Установка даты</string>
+    <string name="time_setup">Установка времени</string>
+</resources>

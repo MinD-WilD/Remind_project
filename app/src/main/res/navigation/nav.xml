@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="by.tms.remind.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_dateActivity"
+            app:destination="@id/dateActivity" />
+        <action
+            android:id="@+id/action_mainActivity_to_timeActivity"
+            app:destination="@id/timeActivity" />
+    </activity>
+    <activity
+        android:id="@+id/dateActivity"
+        android:name="by.tms.remind.DateActivity"
+        android:label="date_layout"
+        tools:layout="@layout/date_layout" >
+        <action
+            android:id="@+id/action_dateActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </activity>
+    <activity
+        android:id="@+id/timeActivity"
+        android:name="by.tms.remind.TimeActivity"
+        android:label="time_layout"
+        tools:layout="@layout/time_layout" >
+        <action
+            android:id="@+id/action_timeActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </activity>
+</navigation>
